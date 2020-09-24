@@ -1,0 +1,277 @@
+Microsoft Windows [Version 10.0.18363.1082]
+(c) 2019 Microsoft Corporation. Alle rechten voorbehouden.
+
+C:\Users\Minoo\OneDrive\Documenten\Flex Python Extra\01-Turtle>py
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import turtle
+>>> help(turtle)
+Help on module turtle:
+
+NAME
+    turtle
+
+MODULE REFERENCE
+    https://docs.python.org/3.8/library/turtle
+
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    Turtle graphics is a popular way for introducing programming to
+    kids. It was part of the original Logo programming language developed
+    by Wally Feurzig and Seymour Papert in 1966.
+
+    Imagine a robotic turtle starting at (0, 0) in the x-y plane. After an ``import turtle``, give it
+    the command turtle.forward(15), and it moves (on-screen!) 15 pixels in
+    the direction it is facing, drawing a line as it moves. Give it the
+    command turtle.right(25), and it rotates in-place 25 degrees clockwise.
+
+    By combining together these and similar commands, intricate shapes and
+    pictures can easily be drawn.
+
+    ----- turtle.py
+
+
+>>> turtle.penup()
+>>> turtle.forward()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: forward() missing 1 required positional argument: 'distance'
+>>> help(turtle.setup)
+Help on function setup in module turtle:
+
+setup(width=0.5, height=0.75, startx=None, starty=None)
+    Set the size and position of the main window.
+
+    Arguments:
+    width: as integer a size in pixels, as float a fraction of the
+      Default is 50% of
+    height: as integer the height in pixels, as float a fraction of the
+       Default is 75% of
+    startx: if positive, starting position in pixels from the left
+      edge of the screen, if negative from the right edge
+      Default, startx=None is to center window horizontally.
+    starty: if positive, starting position in pixels from the top
+      edge of the screen, if negative from the bottom edge
+      Default, starty=None is to center window vertically.
+
+    Examples:
+    >>> setup (width=200, height=200, startx=0, starty=0)
+
+    sets window to 200x200 pixels, in upper left of screen
+
+    >>> setup(width=.75, height=0.5, startx=None, starty=None)
+
+    sets window to 75% of screen by 50% of screen and centers
+
+>>> turtle.setup(400,400,0,0)
+>>> turtle.setup(400,400,0,0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<string>", line 5, in setup
+turtle.Terminator
+>>> turtle.setup(400, 400, 0, 0)
+>>> turtle.forward(100)
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turtle.reset()
+>>> turtle.forward(100)
+>>> turtle.left(360)
+>>> turtle.left(120)
+>>> turtle.forward(100)
+>>> turtle.left(360)
+>>> turtle.left(120)
+>>> turtle.forward(100)
+>>> turtle.reset()
+>>> turtle.forward(100)
+>>> turtle.right(60)
+>>> turtle.left(120)
+>>> turtle.forward(100)
+>>> turtle.right(60)
+>>> turtle.left(120)
+>>> turtle.forward(100)
+>>> turtle.right(60)
+>>> turtle.left(120)
+>>> turtle.forward(100)
+>>> turtle.backward(100)
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> turtle.backward(100)
+>>> turtle.reset()
+>>> turtle.forward(100)
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> turtle.left(60)
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> turtle.reset()
+>>> turtle.forward(100)
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> turtle.left(60)
+>>> turtle.left(60)
+>>> turtle.right(60)
+>>> turtle.forward(100)
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> turtle.reset()
+>>> turtle.forward(100)
+>>> turtle.left(72)
+>>> turtle.forward(100)
+>>> turtle.left(72)
+>>> turtle.forward(100)
+>>> turtle.left(72)
+>>> turtle.forward(100)
+>>> turtle.left(72)
+>>> turtle.forward(100)
+>>> turtle.reset()
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.circle(100)
+>>> turtle.reset()
+>>> turtle.circle(100)
+>>> turtle.reset()
+>>> turtle.star()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'turtle' has no attribute 'star'
+>>> turtle.left(36)
+>>> turtle.left(12)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.right(36)
+>>> turtle.right(36)
+>>> turtle.right(36)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.reset()
+>>> trutle.left(12)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'trutle' is not defined
+>>> turtle.left(12)
+>>> turtle.right(12)
+>>> turtle.left(90)
+>>> turtle.right(90)
+>>> turtle.left(36)
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turtle.left(36)
+>>> turtle.right(36)
+>>> turtle.right(90)
+>>> turtle.right(90)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turte.reset()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'turte' is not defined
+>>> turtle.reset()
+>>> turtle.forward(100)
+>>> turtle.right(90)
+>>> turtle.right(90)
+>>> turtle.right(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.left(90)
+>>> turtle.left(90)
+>>> turtle.left(90)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.pendown(90)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: pendown() takes 0 positional arguments but 1 was given
+>>> turtle.pendown()
+>>> turtle.forward(100)
+>>> turtle.forward(100)
+>>> turtle.backward(100)
+>>> turtle.reset()
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.penup()
+>>> turtle.forward(100)
+>>> turtle.forward(100)
+>>> turtle.pendown()
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.penup()
+>>> turtle.forward(100)
+>>> turtle.forward(100)
+>>> turtle.pendown()
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>>
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.reset()
+>>> turtle.color("red")
+>>> turtle.forward(100)
+>>> turtle.right(45)
+>>> turtle.forward(100)
+>>> turtle.right(45)
+>>> turtle.color("#44B9DA")
+>>> venster = turtle.getscreen()
+>>> venster.bgcolor("blue")
+>>> venster.bgcolor("black")
+>>> turtle.fillcolor("#FFFFFF")
+>>> turtle.begin_fill()
+>>> turtle.forward(100)
+>>> turtle.right(120)
+>>> turtle.forward(100)
+>>> turtle.right(120)
+>>> turtle.forward(100)
+>>> turtle.end_fill()
+>>> turtle.reset()
